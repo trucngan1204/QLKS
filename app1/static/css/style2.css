@@ -1,0 +1,17 @@
+body {
+  background-image: url("../images/1.png");
+  width:100%;
+    height: 600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+  text-align: center;
+  font-size: 80px;
+  color: brown;
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px #f8f9fa;
+  height: 100px;
+  padding-top: 100px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <div id ="menu">
+        <ul>
+            <li><a href="{{ url_for('Room_list') }}">Room List</a>
+            <ul class="sub-menu" >
+                <li><a href="#">Phòng thường</a></li>
+                <li><a href="#">Phòng đôi </a></li>
+                <li><a href="#">Phòng View biển</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a>
+            <ul class="sub-menu" >
+                <li><a href="#">Đăng kí</a></li>
+                <li><a href="#">Đăng nhập  </a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+<!--    <div class="float-right">-->
+<!--        <li><a>Tài khoản</a>-->
+<!--            <ul class="sub-menu" >-->
+<!--                <li><a href="http://127.0.0.1:5000/admin/">Đăng nhập</a></li>-->
+<!--                <li><a href="#">Đăng kí</a></li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <div class="btn-group">-->
+<!--            <button type="button" class="btn btn-primary ">Tài khoản</button>-->
+<!--            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">-->
+<!--                <span class="caret"></span>u-->
+<!--            </button>-->
+<!--            <ul class="dropdown-menu" role="menu" >-->
+<!--                <li><a href="http://127.0.0.1:5000/admin/">Đăng nhập</a></li>-->
+<!--                <li><a href="#">Đăng kí</a></li>-->
+<!--            </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+
+</div>
+    </div>
+        <h1 class="text-center txtretroshadow"> WELECOME TO HOTEL DIAMOND </h1>
+</body>
+</html>

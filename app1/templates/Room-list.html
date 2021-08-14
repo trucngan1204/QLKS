@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room manager </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-danger">DANH SÁCH PHÒNG</h1>
+        <div>
+            <form>
+                <div class="form-group">
+                    <input class="form-control"
+                           name="kw"
+                           placeholder="Nhập từ khóa để tìm..." />
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="number"
+                               name="from_price"
+                               class="form-control"
+                               placeholder="Nhập giá bắt đầu..." />
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="number"
+                               name="to_price"
+                               class="form-control"
+                               placeholder="Nhập giá kết thúc..." />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Tìm phòng" class="btn btn-danger" />
+                </div>
+            </form>
+        </div>
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            {% for r in room %}
+<!--            <tr>-->
+<!--                <td>-->
+<!--                    <img width="120" src="/static/images/1.jpg" alt ="don"/>-->
+<!--                </td>-->
+<!--                <td> {{ r.id }} </td>-->
+<!--                <td>-->
+<!--                    <a href="{{ url_for('product_detail', room_id=r.id) }}">{{ r.name }}</a>-->
+<!--                </td>-->
+<!--                <td> {{ "{:,.1f}".format(r.price) }} VNĐ</td>-->
+<!--                <td>-->
+<!--                    <a href="javascript:;"-->
+<!--                       onclick="addToCart({{ p.id }}, '{{p.name}}', {{ p.price }})">Đặt hàng</a>-->
+<!--                </td>-->
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Dosis;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

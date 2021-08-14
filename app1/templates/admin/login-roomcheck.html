@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu thuê phòng</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/style1.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="text-center text-danger">Phiếu thông tin khách hàng</h1>
+    <div class="container">
+    <form method="post">
+        <div class="form-group">
+            <label>Tên khách hàng</label>
+            <input type ="text" name ="name" class ="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Số điện thoại</label>
+            <input type ="text" name ="number" class ="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Số chứng minh nhân dân</label>
+            <input type ="text" name ="number card" class ="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Loại phòng</label>
+            <input type ="text" name ="type" class ="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Giá phòng</label>
+            <input type ="text" name ="price" class ="form-control" />
+        </div>
+        <div class="form-group">
+            <input type ="submit" value="LẬP PHIẾU" class ="btn btn-danger" />
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
